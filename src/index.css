@@ -1,4 +1,54 @@
 /* aca van tus estilos valor (2 puntos)*/
+body {
+    
+    background-color:var(--character-list-color);
+  }
+  
+
+  .character {
+    background-color:var(--character-color);    
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    margin: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .character img {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    
+  }
+  .character-container {
+    display: flex;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  .character-status {
+    font-weight: bold;
+}
+
+.alive {
+    color: var(--alive); 
+}
+
+.dead {
+    color: var(--dead); 
+}
+
+.unknown {
+    color: var(--unknown); 
+}
+p{
+    font-family: var(--font);
+    color: var(--primary-font-color)
+}
+ 
 
 :root {
     --character-list-color: #272B33; /* color de la lista de personajes */
